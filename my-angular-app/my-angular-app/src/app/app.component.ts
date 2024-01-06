@@ -5,11 +5,13 @@ import { EditionComponent } from './edition/edition.component';
 import { WorkComponent } from './work/work.component';
 import { EditionRightComponent } from './edition-right/edition-right.component';
 import { WorkRightComponent } from './work-right/work-right.component';
+import { RightMenuComponent } from './shared/right-menu/right-menu.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, EditionComponent, EditionRightComponent, WorkComponent, WorkRightComponent, RouterModule ],
+  imports: [CommonModule, RouterOutlet, EditionComponent, EditionRightComponent,
+     WorkComponent, WorkRightComponent, RouterModule, RightMenuComponent ],
   templateUrl: './app.component.html'
 })
 export class AppComponent {
